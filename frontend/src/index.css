@@ -1,0 +1,16 @@
+:root {
+  --bg-black: #0f0f0f;
+  --card-bg: #1a1a1a;
+  --primary-red: #e50914;
+  --accent-orange: #ff8c00;
+  --text-white: #ffffff;
+  --text-gray: #b3b3b3;
+  --input-bg: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+}

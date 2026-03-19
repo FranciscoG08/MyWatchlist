@@ -1,0 +1,100 @@
+/* Container Principal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%; /* Reduzi ligeiramente o padding vertical */
+  background-color: #000000;
+  border-bottom: 2px solid #e50914;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  height: 70px; /* Altura fixa para manter a consistência */
+}
+
+/* --- LOGO (Imagem) --- */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 45px; /* Define a altura ideal */
+  width: auto;   /* Mantém a proporção da imagem */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05); /* Pequeno efeito de zoom ao passar o rato */
+}
+
+/* Se ainda usares texto em algum lado ou para o Link */
+.navbar-logo a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* --- Links de Navegação --- */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.navbar-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #ff8c00;
+}
+
+/* Botão de Logout */
+.logout-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem; /* Ligeiramente menor para alinhar melhor */
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.logout-btn:hover {
+  background-color: #ff8c00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 140, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 20px;
+    height: 60px;
+  }
+  
+  .logo-img {
+    height: 35px; /* Logo menor em telemóveis */
+  }
+
+  .navbar-links {
+    gap: 15px;
+  }
+
+  .navbar-links li a {
+    font-size: 0.9rem;
+  }
+}
