@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { register } from "../api/auth.js";
 import { useAuth } from "../context/AuthContext"; // 1. Importa o hook
-import "../css/register.css";
+import "../css/login_register.css";
 
 export default function Register() {
   const [email, setEmail] = useState("");

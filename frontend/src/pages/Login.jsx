@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "../api/auth.js";
 import { useAuth } from "../context/AuthContext"; // 1. Importa o hook corretamente
-import "../css/login.css";
+import "../css/login_register.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");

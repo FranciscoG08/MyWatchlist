@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import Movies from "./pages/Movies.jsx";
-import Watchlist from "./pages/Watchlist.jsx";
+import Watchlist from "./pages/WatchList.jsx";
 import "./index.css";
 
 function App() {
